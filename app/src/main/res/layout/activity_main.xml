@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Пропустить"
+        android:textColor="@color/brown"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="@dimen/margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x2margin"
+        android:src="@drawable/illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/welcome"/>
+    <ImageView
+        android:id="@+id/secondImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x2margin"
+        android:src="@drawable/ellipse"
+        android:layout_marginTop="42.2dp"
+        android:layout_marginLeft="157dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:text="Для кого это приложение"
+
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunitosemibold"
+        android:textColor="@color/grey"
+        android:text="Возможно, у вас есть некоторые цели, например, вы хотите написать книгу к 50 годам? Отлично! Поставьте себе цель на определённый год вашей жизни."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#C28327"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_marginBottom="@dimen/x2margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:paddingLeft="@dimen/horizontalbutton"
+        android:paddingRight="@dimen/horizontalbutton"
+        android:paddingTop="@dimen/verticalbutton"
+        android:paddingBottom="@dimen/verticalbutton"
+        android:background="@drawable/rectanglegrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/nunitosemibold"
+        android:layout_marginBottom="@dimen/x2margin"
+        android:layout_marginRight="@dimen/margin"
+        android:paddingLeft="@dimen/horizontalbutton"
+        android:paddingRight="@dimen/horizontalbutton"
+        android:paddingTop="@dimen/verticalbutton"
+        android:paddingBottom="@dimen/verticalbutton"
+        android:background="@drawable/rectanglebeige"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
